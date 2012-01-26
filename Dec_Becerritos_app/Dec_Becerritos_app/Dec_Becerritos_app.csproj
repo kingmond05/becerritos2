@@ -170,25 +170,19 @@
     <Compile Include="Account\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
-<<<<<<< HEAD
+    <!--<<<<<<< HEAD
 =======
-<<<<<<< HEAD
+<<<<<<< HEAD-->
     <Compile Include="DEC.Master.cs">
       <DependentUpon>DEC.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="DEC.Master.designer.cs">
       <DependentUpon>DEC.Master</DependentUpon>
     </Compile>
-=======
->>>>>>> 1b4f31aa8b5c73df9fed000632826dafe56a23e7
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
->>>>>>> 3efa41c1eeeb8aa02140330ee68b44f04a59eb3d
+    <!--=======
+>>>>>>> 1b4f31aa8b5c73df9fed000632826dafe56a23e7-->
+    <!-->>>>>>> 3efa41c1eeeb8aa02140330ee68b44f04a59eb3d-->
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

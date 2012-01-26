@@ -33,7 +33,9 @@ namespace Dec_Becerritos_app.Models
         public string REGIONVALDESIA = "slw/05.sel";
         public string AZUA = "slw/0502.sel";
         public string PERAVIA = "slw/0517.sel";
-        public string SANCRISTOBAL = "";
+        public string SANCRISTOBAL = "slw/0521.sel";
+        public string SANJOSEDEOCOA = "slw/0531.sel";
+        public string REGIONENRIQUILLO = "";
 
 
 
