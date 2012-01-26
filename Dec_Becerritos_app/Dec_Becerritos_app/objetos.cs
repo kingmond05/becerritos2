@@ -14,6 +14,11 @@ namespace Dec_Becerritos_app
         public resultado result { get; set; }
         public string source { get; set; }
         public string link { get; set; }
+
+        public int GetEnumerator()
+        {
+            return result.fArray.Count;
+        }
     }
 
     public class resultado
@@ -31,4 +36,5 @@ namespace Dec_Becerritos_app
         public string fType { get; set; }
     }
 
+    
 }
