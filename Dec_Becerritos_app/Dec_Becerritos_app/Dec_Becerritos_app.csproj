@@ -107,7 +107,10 @@
     <Content Include="css\screen\reset.css" />
     <Content Include="css\screen\text.css" />
     <Content Include="css\screen\xGrid.css" />
+    <Content Include="Educacion.aspx" />
+    <Content Include="Empleos.aspx" />
     <Content Include="Graficas.aspx" />
+    <Content Include="Ingresos.aspx" />
     <Content Include="js\jquery-ui-1.8.16.custom.min.js" />
     <Content Include="js\jquery-ui-1.8.17.custom.min.js" />
     <Content Include="js\jquery.blockUI.js" />
@@ -173,6 +176,11 @@
     <!--<<<<<<< HEAD
 =======
 <<<<<<< HEAD-->
+    <Compile Include="DataDec.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataDec.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DEC.Master.cs">
       <DependentUpon>DEC.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -183,6 +191,20 @@
     <!--=======
 >>>>>>> 1b4f31aa8b5c73df9fed000632826dafe56a23e7-->
     <!-->>>>>>> 3efa41c1eeeb8aa02140330ee68b44f04a59eb3d-->
+    <Compile Include="Educacion.aspx.cs">
+      <DependentUpon>Educacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Educacion.aspx.designer.cs">
+      <DependentUpon>Educacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Empleos.aspx.cs">
+      <DependentUpon>Empleos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Empleos.aspx.designer.cs">
+      <DependentUpon>Empleos.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -192,6 +214,13 @@
     </Compile>
     <Compile Include="Graficas.aspx.designer.cs">
       <DependentUpon>Graficas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ingresos.aspx.cs">
+      <DependentUpon>Ingresos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ingresos.aspx.designer.cs">
+      <DependentUpon>Ingresos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\json.cs" />
     <Compile Include="objetos.cs" />
@@ -213,6 +242,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="DEC.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataDec.xsc">
+      <DependentUpon>DataDec.xsd</DependentUpon>
+    </None>
+    <None Include="DataDec.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataDec.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataDec.xss">
+      <DependentUpon>DataDec.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
