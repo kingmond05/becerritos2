@@ -50,13 +50,84 @@
     <Reference Include="System.Web.ApplicationServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="About.aspx" />
     <Content Include="Account\ChangePassword.aspx" />
     <Content Include="Account\ChangePasswordSuccess.aspx" />
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
+    <Content Include="css\base.css" />
+    <Content Include="css\Blue-theme\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="css\Blue-theme\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="css\Blue-theme\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="css\Blue-theme\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="css\Blue-theme\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="css\Blue-theme\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="css\Blue-theme\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="css\Blue-theme\images\ui-bg_gloss-wave_30_243349_500x100.png" />
+    <Content Include="css\Blue-theme\images\ui-icons_222222_256x240.png" />
+    <Content Include="css\Blue-theme\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="css\Blue-theme\images\ui-icons_454545_256x240.png" />
+    <Content Include="css\Blue-theme\images\ui-icons_888888_256x240.png" />
+    <Content Include="css\Blue-theme\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="css\Blue-theme\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="css\Blue-theme\jquery-ui-1.8.16.custom.css" />
+    <Content Include="css\cssProject.css" />
+    <Content Include="css\cssUpdateProgress.css" />
+    <Content Include="css\custom-theme\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="css\custom-theme\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="css\custom-theme\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="css\custom-theme\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="css\custom-theme\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="css\custom-theme\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="css\custom-theme\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="css\custom-theme\images\ui-bg_gloss-wave_30_243349_500x100.png" />
+    <Content Include="css\custom-theme\images\ui-icons_222222_256x240.png" />
+    <Content Include="css\custom-theme\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="css\custom-theme\images\ui-icons_454545_256x240.png" />
+    <Content Include="css\custom-theme\images\ui-icons_888888_256x240.png" />
+    <Content Include="css\custom-theme\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="css\custom-theme\jquery-ui-1.8.16.custom.css" />
+    <Content Include="css\demo_page.css" />
+    <Content Include="css\demo_table.css" />
+    <Content Include="css\demo_table_jui.css" />
+    <Content Include="css\lightview.css" />
+    <Content Include="css\loading.gif" />
+    <Content Include="css\login.css" />
+    <Content Include="css\plugin1.css" />
+    <Content Include="css\plugin\dataTables.css" />
+    <Content Include="css\plugin\facebox.css" />
+    <Content Include="css\plugin\jquery.lightbox-0.5.css" />
+    <Content Include="css\plugin\jquery.visualize.css" />
+    <Content Include="css\plugin\tipsy.css" />
+    <Content Include="css\plugin\uniform.default.css" />
+    <Content Include="css\screen.css" />
+    <Content Include="css\screen\buttons.css" />
+    <Content Include="css\screen\layout.css" />
+    <Content Include="css\screen\mega.css" />
+    <Content Include="css\screen\reset.css" />
+    <Content Include="css\screen\text.css" />
+    <Content Include="css\screen\xGrid.css" />
+    <Content Include="Graficas.aspx" />
+    <Content Include="js\jquery-ui-1.8.16.custom.min.js" />
+    <Content Include="js\jquery-ui-1.8.17.custom.min.js" />
+    <Content Include="js\jquery.blockUI.js" />
+    <Content Include="js\jquery.dataTables.min.js" />
+    <Content Include="js\jquery\facebox.js" />
+    <Content Include="js\jquery\jquery.1.4.2.min.js" />
+    <Content Include="js\jquery\jquery.dataTables.min.js" />
+    <Content Include="js\jquery\jquery.lightbox-0.5.min.js" />
+    <Content Include="js\jquery\jquery.maskedinput-1.3.min.js" />
+    <Content Include="js\jquery\jquery.quicksearch.js" />
+    <Content Include="js\jquery\jquery.tablesorter.min.js" />
+    <Content Include="js\jquery\jquery.tipsy.js" />
+    <Content Include="js\jquery\jquery.uniform.min.js" />
+    <Content Include="js\jquery\jquery.visualize.js" />
+    <Content Include="js\misc\excanvas.min.js" />
+    <Content Include="js\plugin.js" />
+    <Content Include="js\slate\slate.js" />
+    <Content Include="js\slate\slate.message.js" />
+    <Content Include="js\slate\slate.portlet.js" />
+    <Content Include="js\widgets.js" />
     <Content Include="Styles\Site.css" />
-    <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.4.1.js" />
@@ -70,13 +141,6 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="About.aspx.cs">
-      <DependentUpon>About.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="About.aspx.designer.cs">
-      <DependentUpon>About.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Account\ChangePassword.aspx.cs">
       <DependentUpon>ChangePassword.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -105,16 +169,17 @@
     <Compile Include="Account\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Graficas.aspx.cs">
+      <DependentUpon>Graficas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Graficas.aspx.designer.cs">
+      <DependentUpon>Graficas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="objetos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>

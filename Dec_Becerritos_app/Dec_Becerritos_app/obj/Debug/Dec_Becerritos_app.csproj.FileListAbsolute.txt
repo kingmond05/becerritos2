@@ -1,0 +1,5 @@
+C:\Users\Ramon Matos\becerritos2\Dec_Becerritos_app\Dec_Becerritos_app\bin\Dec_Becerritos_app.dll
+C:\Users\Ramon Matos\becerritos2\Dec_Becerritos_app\Dec_Becerritos_app\bin\Dec_Becerritos_app.pdb
+C:\Users\Ramon Matos\becerritos2\Dec_Becerritos_app\Dec_Becerritos_app\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ramon Matos\becerritos2\Dec_Becerritos_app\Dec_Becerritos_app\obj\Debug\Dec_Becerritos_app.dll
+C:\Users\Ramon Matos\becerritos2\Dec_Becerritos_app\Dec_Becerritos_app\obj\Debug\Dec_Becerritos_app.pdb
