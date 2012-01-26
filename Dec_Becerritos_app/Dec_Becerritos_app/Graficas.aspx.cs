@@ -46,19 +46,27 @@ namespace Dec_Becerritos_app
             GetJson();
             var serializer_ = new JavaScriptSerializer();
             objetos jsonStructure = serializer_.Deserialize<objetos>(json_);
+            Grafica(jsonStructure);
         }
         protected void Grafica(objetos x)
         {
             string script, script2, script3;
+            
             script = "google.load('visualization', '1', { packages: ['corechart'] }); google.setOnLoadCallback(drawChart1); function drawChart1() { var data = new google.visualization.DataTable(); data.addColumn('string', 'Día'); data.addColumn('number', 'Promedio duración llamadas (segundos)');";
-            script2 = "data.addRows(" + dias.Length + ");";
+            script2 = "data.addRows(" + x.result.fCols + ");";
             int cont = 0;
-            foreach (sp_GetREGISTRO_USUARIOResult aux in dias)
+            for(int i = 0; i < x.result.fCols ; i++)
             {
-                script2 += "data.setValue(" + cont + ",0, '" + aux.FECHA + "'); ";
-                script2 += "data.setValue(" + cont + ", 1, " + aux.SUMA + "); ";
+                script2 += "data.setValue(" + cont + ",0, '" + x.result.fArray[i].fStr + "'); ";
                 cont++;
             }
+            cont = 0;
+            for (int i = 0; i < x.result.fCols; i++)
+            {
+                script2 += "data.setValue(" + cont + ",1, '" + x.result.fArray[i + x.result.fCols].fStr + "'); ";
+                cont++;
+            }
+
             script3 = "var chart = new google.visualization.ColumnChart(document.getElementById('divRegistroDiario_2')); chart.draw(data, { width: 520, height: 350,legend:'bottom' ,hAxis: {direction:-1} });}";
             jscript += script + script2 + script3;
         
