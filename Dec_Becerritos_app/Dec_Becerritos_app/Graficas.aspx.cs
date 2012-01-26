@@ -53,7 +53,7 @@ namespace Dec_Becerritos_app
             string script, script2, script3;
             
             script = "google.load('visualization', '1', { packages: ['corechart'] }); google.setOnLoadCallback(drawChart1); function drawChart1() { var data = new google.visualization.DataTable(); data.addColumn('string', 'Día'); data.addColumn('number', 'Promedio duración llamadas (segundos)');";
-            script2 = "data.addRows(" + x.result.fCols + ");";
+            script2 = "data.addRows("+23+");";
             int cont = 0;
             for(int i = 0; i < x.result.fCols ; i++)
             {
