@@ -49,18 +49,18 @@ namespace Dec_Becerritos_app
         }
         protected void Grafica(objetos x)
         {
-            string script, script2, script3;
-            script = "google.load('visualization', '1', { packages: ['corechart'] }); google.setOnLoadCallback(drawChart1); function drawChart1() { var data = new google.visualization.DataTable(); data.addColumn('string', 'Día'); data.addColumn('number', 'Promedio duración llamadas (segundos)');";
-            script2 = "data.addRows(" + dias.Length + ");";
-            int cont = 0;
-            foreach (sp_GetREGISTRO_USUARIOResult aux in dias)
-            {
-                script2 += "data.setValue(" + cont + ",0, '" + aux.FECHA + "'); ";
-                script2 += "data.setValue(" + cont + ", 1, " + aux.SUMA + "); ";
-                cont++;
-            }
-            script3 = "var chart = new google.visualization.ColumnChart(document.getElementById('divRegistroDiario_2')); chart.draw(data, { width: 520, height: 350,legend:'bottom' ,hAxis: {direction:-1} });}";
-            jscript += script + script2 + script3;
+            //string script, script2, script3;
+            //script = "google.load('visualization', '1', { packages: ['corechart'] }); google.setOnLoadCallback(drawChart1); function drawChart1() { var data = new google.visualization.DataTable(); data.addColumn('string', 'Día'); data.addColumn('number', 'Promedio duración llamadas (segundos)');";
+            //script2 = "data.addRows(" + dias.Length + ");";
+            //int cont = 0;
+            //foreach (sp_GetREGISTRO_USUARIOResult aux in dias)
+            //{
+            //    script2 += "data.setValue(" + cont + ",0, '" + aux.FECHA + "'); ";
+            //    script2 += "data.setValue(" + cont + ", 1, " + aux.SUMA + "); ";
+            //    cont++;
+            //}
+            //script3 = "var chart = new google.visualization.ColumnChart(document.getElementById('divRegistroDiario_2')); chart.draw(data, { width: 520, height: 350,legend:'bottom' ,hAxis: {direction:-1} });}";
+            //jscript += script + script2 + script3;
         
         }
     }
