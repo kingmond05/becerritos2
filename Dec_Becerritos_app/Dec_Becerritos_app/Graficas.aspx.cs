@@ -48,6 +48,21 @@ namespace Dec_Becerritos_app
             objetos jsonStructure = serializer_.Deserialize<objetos>(json_);
             Grafica(jsonStructure);
         }
+        protected void Tabla(objetos t, int ini)
+        {
+            string tabla = "";
+            string fila = "";
+
+            int columnas = 0;
+            while(columnas < t.result.fCols)
+            {
+                if (t.result.fArray[columnas + ini].fStr != "")
+                {
+                    fila = "<td>" + t.result.fArray[columnas + ini].fStr + "</td>";
+                    tabla += "<tr>" + fila + "</tr>";
+                }
+            }
+        }
         protected void Grafica(objetos x)
         {
             string script, script2, script3;
@@ -55,16 +70,19 @@ namespace Dec_Becerritos_app
             script = "google.load('visualization', '1', { packages: ['corechart'] }); google.setOnLoadCallback(drawChart1); function drawChart1() { var data = new google.visualization.DataTable(); data.addColumn('string', 'Día'); data.addColumn('number', 'Promedio duración llamadas (segundos)');";
             script2 = "data.addRows("+23+");";
             int cont = 0;
-            for(int i = 0; i < x.result.fCols ; i++)
+            for(int i = 0; i < (23*x.result.fRows); i++)
             {
                 script2 += "data.setValue(" + cont + ",0, '" + x.result.fArray[i].fStr + "'); ";
                 cont++;
             }
             cont = 0;
-            for (int i = 0; i < x.result.fCols; i++)
+            for (int i = 0; i < x.result.fArray.Count; i++)
             {
-                script2 += "data.setValue(" + cont + ",1, '" + x.result.fArray[i + x.result.fCols].fStr + "'); ";
-                cont++;
+                for (int j = 0; j < 23; j++)
+                {
+                    script2 += "data.setValue(" + cont + ",1, '" + x.result.fArray[i + x.result.fCols].fStr + "'); ";
+                    cont++;
+                }
             }
 
             script3 = "var chart = new google.visualization.ColumnChart(document.getElementById('divRegistroDiario_2')); chart.draw(data, { width: 520, height: 350,legend:'bottom' ,hAxis: {direction:-1} });}";
